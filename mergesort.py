@@ -1,4 +1,5 @@
 from generatelist import myList
+from time import time
 
 def mergeSort(alist):
     if len(alist)>1:
@@ -31,4 +32,7 @@ def mergeSort(alist):
             j=j+1
             k=k+1
             
+start = time()
 mergeSort(myList)
+end = time() - start
+print('runtime: ', end)

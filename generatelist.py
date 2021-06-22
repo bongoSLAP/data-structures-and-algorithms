@@ -1,2 +1,3 @@
 import numpy as np
-myList = np.random.randint(1,25000,25000)
+datasetSize = 25000
+myList = np.random.randint(1, datasetSize, datasetSize)
