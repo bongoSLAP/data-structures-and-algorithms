@@ -2,7 +2,7 @@ import numpy as np
 
 def genInputIncrement():
     incrementArray = []
-    increment = 0
+    increment = 20000
 
     for i in range(50+1):
         incrementArray.append(increment)
@@ -11,4 +11,6 @@ def genInputIncrement():
     return incrementArray
 
 def genRandomDataset(datasetSize):
-    return np.random.randint(1, datasetSize, datasetSize)
+    return np.random.randint(1, 20000, datasetSize)
+
+#print(genInputIncrement())
